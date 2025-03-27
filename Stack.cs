@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtusHomework5
 {
-    internal class Stack
+    public class Stack
     {
         private List<string> _storage;
 
