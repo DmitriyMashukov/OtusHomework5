@@ -46,5 +46,17 @@ namespace OtusHomework5
                 return _storage[_storage.Count - 1];
             }
         }
+
+        public static Stack Concat(params Stack[] stacks)
+        {
+            var reversedStack = new Stack();
+
+            foreach (var s in stacks)
+            {
+                while (s.Size > 0)
+                    reversedStack.Add(s.Pop());
+            }
+            return reversedStack;
+        }
     }
 }
